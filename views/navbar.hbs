@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg py-2 fixed-top border-boottom navbar-dark bg-dark">
+   <nav class="navbar navbar-light bg-dark">
+  <a class="navbar-brand" href="#">
+    <img src="/static/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+   Codekart
+  </a>
+</nav>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto ">
+      {{#each data.links}}
+      <li class="nav-item active btn-secondary btn-sm">  
+        <a class="nav-link" href="{{this.url}}">{{this.label}} <span class="sr-only">(current)</span></a>
+      </li>
+     {{/each}}
+    </ul>
+
+  </div>
+  </div>
+</nav>
